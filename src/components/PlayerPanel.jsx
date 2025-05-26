@@ -1,6 +1,6 @@
 import React from 'react'
 import { Play, Pause, SkipBack, SkipForward, Shuffle, Repeat } from 'lucide-react'
-
+import logo from "../assets/Group.svg"
 const PlayerPanel = ({ currentEpisode, isPlaying, onPausePlay }) => {
   if (!currentEpisode) {
     return (
@@ -8,14 +8,14 @@ const PlayerPanel = ({ currentEpisode, isPlaying, onPausePlay }) => {
       {/* Header */}
       <div className="p-6 text-center ">
         <div className="flex items-center justify-center space-x-2 mb-2">
-          <Play className="w-4 h-4 text-white fill-white" />
-          <span className="text-sm font-medium">Tocando agora</span>
+          <img src={logo} className="size-6 text-white fill-white" />
+          <span className="text-base font-semibold font-lexend leading-none text-center">Tocando agora</span>
         </div>
       </div>
 
       {/* Episode Info */}
       <div className="flex-1 flex flex-col justify-center items-center px-8 py-12">
-        <div className="w-64 h-64 bg-white bg-opacity-10 rounded-lg mb-8 flex items-center justify-center">
+        <div className="w-72 h-80 bg-white bg-opacity-10 rounded-lg mb-8 flex items-center justify-center">
           <div className="w-48 h-48  rounded-lg flex items-center justify-center">
           Selecione um
           podcast para ouvir
@@ -87,7 +87,7 @@ const PlayerPanel = ({ currentEpisode, isPlaying, onPausePlay }) => {
 
       {/* Episode Info */}
       <div className="flex-1 flex flex-col justify-center items-center px-8 py-12">
-        <div className="border-dashed border-2 border-[#9F75FF] w-64 h-64 bg-white bg-opacity-10 rounded-lg mb-8 flex items-center justify-center">
+        <div className="border-dashed border-2 border-[#9F75FF] w-72 h-80 bg-white bg-opacity-10 rounded-lg mb-8 flex items-center justify-center">
           {/* <div className="w-48 h-48 bg-white bg-opacity-20 rounded-lg flex items-center justify-center"> */}
             <Play className="w-12 h-12 text-white opacity-70" />
           {/* </div> */}
