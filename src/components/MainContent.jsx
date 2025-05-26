@@ -14,17 +14,17 @@ const MainContent = ({ episodes, onPlayEpisode, currentEpisode, isPlaying }) => 
             {/* </div> */}
             <h1 className="text-2xl font-bold text-[#494D4B]">Podcastr</h1>
           </div>
-          <p className="text-gray-500">Qui, 8 Abril</p>
+          <p className="text-gray-500 font-normal text-[14px] text-gray-400">Qui, 8 Abril</p>
       </div>
-      <div className=" pt-0 p-8 pb-6]">
+      <div className=" pt-0 p-4 md:p-8 pb-6]">
       
 
         {/* Recent Episodes */}
         <div className="mb-8 m-auto">
-          <h2 className="text-xl font-semibold text-gray-900 mb-6 font-lexend text-[16px] font-[600] tracking-[0%]">Últimos lançamentos</h2>
+          <h2 className="text-xl font-semibold text-[#494D4B] mb-6 font-lexend text-[16px] font-[600] tracking-[0%]">Últimos lançamentos</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center">
             {podcastData.recentEpisodes.map((episode) => (
-              <div key={episode.id} className="w-[432px] h-[136px] bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div key={episode.id} className="w-full md:w-[432px] md:h-[136px] bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex items-center space-x-4">
                   <div className="w-24 h-24 bg-gray-200 rounded-lg flex-shrink-0"></div>
                   <div className="p-2 w-full flex flex-col flex-wrap content-between justify-between h-24">
@@ -54,7 +54,7 @@ const MainContent = ({ episodes, onPlayEpisode, currentEpisode, isPlaying }) => 
         {/* All Episodes */}
         <div className="scrollbar-hide">
           <div className="pt-8">
-            <h2 className="text-xl font-semibold text-gray-900 mb-6">Todos os episódios</h2>
+            <h2 className="text-xl font-semibold text-[#494D4B] mb-6">Todos os episódios</h2>
             
             {/* Table Header */}
             <div className="grid grid-cols-12  gap-8 px-6 py-3 text-xs font-medium text-[#808080] uppercase">
