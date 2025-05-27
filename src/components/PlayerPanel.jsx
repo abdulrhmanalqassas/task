@@ -36,12 +36,13 @@ const PlayerPanel = ({ currentEpisode, isPlaying, onPausePlay }) => {
       <div className="p-8">
         {/* Progress Bar */}
         <div className="mb-6">
-          <div className="w-full h-1 bg-green-400 bg-opacity-20 rounded-xl mb-2">
-            {/* <div className="w-1/3 h-full bg-green-400 rounded-xl"></div> */}
-          </div>
-          <div className="flex justify-between text-xs text-white text-opacity-70">
-            <span>00:00</span>
-            <span>00:00</span>
+         
+        <div className="flex items-center flex-row justify-evenly text-xs text-white text-opacity-70">
+          <div>00:00</div>
+            <div className="w-[70%] h-1 bg-white  bg-opacity-20 rounded-xl ">
+           
+            </div>
+            <div>00:00</div>
           </div>
         </div>
 
@@ -107,12 +108,13 @@ const PlayerPanel = ({ currentEpisode, isPlaying, onPausePlay }) => {
       <div className="p-8">
         {/* Progress Bar */}
         <div className="mb-6">
-          <div className="w-full h-1 bg-green-400 bg-opacity-20 rounded-xl mb-2">
+         
+          <div className="flex items-center flex-row justify-evenly text-xs text-white text-opacity-70">
+          <div>00:00</div>
+            <div className="w-[70%] h-1 bg-white  bg-opacity-20 rounded-xl ">
             <div className="w-1/3 h-full bg-green-400 rounded-xl"></div>
-          </div>
-          <div className="flex justify-between text-xs text-white text-opacity-70">
-            <span>00:00</span>
-            <span>00:00</span>
+            </div>
+            <div>00:00</div>
           </div>
         </div>
 
