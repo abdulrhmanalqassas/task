@@ -9,10 +9,10 @@ const MainContent = ({ episodes, onPlayEpisode, currentEpisode, isPlaying }) => 
       {/* Header */}
       <div className="h-[104px] p-8  bg-white flex items-center justify-between mb-8  bg-white border-b border-[#E6E8EB">
           <div className="flex items-center space-x-3">
-            {/* <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center"> */}
             <img src={musicLogo} alt="Music Logo" className="w-8 h-8" />
-            {/* </div> */}
-            <h1 className="text-2xl font-bold text-[#494D4B]">Podcastr</h1>
+            <h1 className="text-2xl font-bold text-[#494D4B] pe">Podcastr</h1>
+            <div className="w-[1px] h-4 bg-[#E6E8EB] mx-4"></div>
+            <span className="mx-4 text-[14px] font-normal font-[400]  text-[#808080]">O melhor para você ouvir, sempre</span>
           </div>
           <p className="text-gray-500 font-normal text-[14px] text-gray-400">Qui, 8 Abril</p>
       </div>
@@ -39,7 +39,7 @@ const MainContent = ({ episodes, onPlayEpisode, currentEpisode, isPlaying }) => 
                     
                       <button
                         onClick={() => onPlayEpisode(episode)}
-                        className="w-10 h-10  border-2 border-[#04D361] rounded-lg flex items-center justify-center hover:bg-purple-50 transition-colors"
+                        className="w-10 h-10  border border-[#E6E8EB] rounded-lg flex items-center justify-center hover:bg-purple-50 transition-colors"
                       >
                         <Play className="w-4 h-4 text-[#04D361] fill-[#04D361] ml-0.5" />
                       </button>
@@ -81,7 +81,7 @@ const MainContent = ({ episodes, onPlayEpisode, currentEpisode, isPlaying }) => 
                   <div className="col-span-1 flex items-center justify-end">
                     <button 
                       onClick={() => onPlayEpisode(episode)}
-                      className="w-8 h-8 border-2 border-[#E6E8EB] rounded-lg flex items-center justify-center hover:bg-[#04D361] group/play transition-colors"
+                      className="w-8 h-8 border border-[#E6E8EB] rounded-lg flex items-center justify-center hover:bg-[#04D361] group/play transition-colors"
                     >
                       <Play className="w-3 h-3 text-[#04D361] fill-[#04D361] group-hover/play:text-white ml-0.5" />
                     </button>

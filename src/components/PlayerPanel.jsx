@@ -14,9 +14,12 @@ const PlayerPanel = ({ currentEpisode, isPlaying, onPausePlay }) => {
       </div>
 
       {/* Episode Info */}
-      <div className="flex-1 flex flex-col justify-center items-center px-8 py-12">
+      <div className="flex-1 flex flex-col justify-center items-center px-8 py-12" >
      
-        <div className="border-dashed border-2 border-[#9F75FF] w-72 h-80 bg-white bg-opacity-10 rounded-lg mb-8 flex items-center justify-center">
+        <div className=" w-72 h-80 bg-white bg-[#9F75FF] rounded-lg mb-8 flex items-center justify-center "  style={{
+    backgroundImage: `url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='%23D0BFF6D4' stroke-width='2' stroke-dasharray='9' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e")`,
+    borderRadius: '20px'
+  }} >
           <div className=" text-center w-48 h-48  rounded-lg flex items-center justify-center">
           Selecione um
           podcast para ouvir
@@ -88,7 +91,7 @@ const PlayerPanel = ({ currentEpisode, isPlaying, onPausePlay }) => {
 
       {/* Episode Info */}
       <div className="flex-1 flex flex-col justify-center items-center px-8 py-12">
-        <div className="border-dashed border-2 border-[#9F75FF] w-72 h-80 bg-white bg-opacity-10 rounded-lg mb-8 flex items-center justify-center">
+        <div className="border-dashed border border-[#9F75FF] w-72 h-80 bg-white bg-opacity-10 rounded-lg mb-8 flex items-center justify-center">
           {/* <div className="w-48 h-48 bg-white bg-opacity-20 rounded-lg flex items-center justify-center"> */}
             <Play className="w-16 h-16 text-white opacity-70" />
           {/* </div> */}
